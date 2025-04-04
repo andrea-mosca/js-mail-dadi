@@ -22,4 +22,8 @@ for(let i = 0; i < invitedEmail.length; i++){
         emailFound = true;
     }
 }
-emailFound? console.log('email trovata, puoi entrare') : console.log('email non trovata, non puoi accedere');
+if(emailFound){
+    console.log('email trovata, puoi entrare');
+}else{
+    console.log('email non trovata, non puoi accedere');
+}
